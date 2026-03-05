@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-s2cale=1 .0">
+    <title>Document</title>
+</head>
+<body>
+<form action="" class="registeration-form" method="post">
+    <h3>Registeration</h3>
+    <p>Register below</p>
+    <div class="flex">
+        <input type="text"
+        placeholder="First name" required>
+        </div>
+    <input type="text" class="input"
+    placeholder="Username"><br>
+    <input type="email" class="input"
+    placeholder="Email address"><br>
+    <input type="number" class="input"
+    placeholder="Phone number">
+    <label for="date"><br>Birth Date:</label><br>
+    <input type="date" class="input"
+    id="date">
+    <div>
+        Gender: 
+        <label><input type="radio" name="gender">Male</label>
+        <label><input type="radio" name="gender">Female</label>
+        <label><input type="radio" name="gender">Other</label>
+    </div>
+    <button
+    type="submit">Register</button>
+</form>
+<style>
+    .registeration-form {
+        width: 300px;
+        padding: 30px;
+        margin: 10 auto;
+        background: #ddd;
+    }
+    .registeration-form h3,p {
+        text-align: center;
+        margin: 5px 0;
+    }
+    .registeration-form p:nth-child(2){
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    .registeration-form .flex {
+        width: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+    }
+    .registeration-form .flex
+    input[type=text] {
+        width: 150px;
+        border: none;
+        outline: none;
+        height: 15px;
+        padding-left: 15px;
+    }
+    .registeration-form input.input {
+        width: 150px;
+        height: 15px;
+        padding-left: 15px;
+        border: none;
+        outline: none;
+        margin: 10px 0;
+    }
+    .registeration-form button{
+        width: 150px;
+        height: 38px;
+        border: none;
+        padding-left: 15px;
+        outline: none;
+        background: lightseagreen;
+        color: yellow;
+        font-weight: 500;
+        cursor: pointer;
+        box-shadow: 5px 5px 8px rgba(237, 32, 155, 0.2);
+    }
+</style>
+</body>
+</html>
